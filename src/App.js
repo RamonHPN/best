@@ -39,11 +39,11 @@ function App() {
     <div>
       <header>
         <div class='Logo'>
-          <p>
-            T COMPANY
-          </p>
+          <h2>
+            Quiz Total
+          </h2>
         </div>
-        <div class="Menu">
+        {/* <div class="Menu">
           <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="opts">Option 1</a>
           <a href="https://www.videos.com/" target="_blank" rel="noopener noreferrer" class="opts">Option 2</a>
           <a href="https://animesgames.net/" target="_blank" rel="noopener noreferrer" class="opts">Option 3</a>
@@ -51,46 +51,40 @@ function App() {
           <div id="divBusca">
             <input class="busca" type="text" id="txtBusca" placeholder="Search"/>
           </div>
-        </div>
+        </div> */}
       </header> 
     
     <main>
       <div class='Inicio'>
         <h1>
-          Effective<br></br>
-          advertising
+          Pergunta N1º
         </h1>
         <p>
-          Best solutions for online marketing
+          Pontuação Total: 0
         </p>
       </div>
       <div class='Meio'> 
-        <p>Por que o esqueleto não brigou com ninguém? Porque ele não tinha estômago para isso!
-
-          Qual é o doce preferido do átomo? O algodão-doce!
-
-          O que uma impressora disse à outra? "Essa folha é sua ou é uma impressão minha?"
-
-          Por que o computador foi ao médico? Porque estava com vírus!
-
-          O que o zero disse para o oito? "Uau, que cinto maneiro!"
-
-          Como o oceano cumprimenta o outro oceano? Ele acena!
-
-          O que um pão disse para o outro pão? "Vamos ser amigos, você é massa!"
-
-          Por que o livro de matemática parecia triste? Porque tinha muitos problemas.
-
-          O que aconteceu com o ladrão que roubou um calendário? Ele pegou 12 meses de prisão!
-
-          Por que o piano não pode se levantar sozinho? Porque ele tem pernas de pau!
-          
-          </p>
+        <p>
+          Pergunta:<br></br><br></br>
+          Teste Pergunta
+        </p>
+        <div class="respostas">
           <button class="btn">
             Learn more
           </button>
+          <button class="btn">
+            Learn more
+          </button>
+          <button class="btn">
+            Learn more
+          </button>
+          <button class="btn">
+            Learn more
+          </button>
+        </div>
+          
       </div>
-      <ul>
+      {/* <ul>
         {
           emojis.map(emoji => (
             <li key={emoji.name}>
@@ -102,7 +96,7 @@ function App() {
             </li>
           ))
         }
-      </ul>
+      </ul> */}
 
     </main>
 
