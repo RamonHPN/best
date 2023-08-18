@@ -7,6 +7,7 @@
   pointer-events: none;
 }
 
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -35,4 +36,95 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: url("https://wallpapercrafter.com/th8002/774117-minimalism-techno-Tatof-abstract-white-color-pattern.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header {
+  background-color: #282c345b;
+  color: #1f1d1d;
+  padding: 3px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 3em 0em;
+}
+
+header a{
+  text-decoration: none;
+  color: #282c34;
+}
+
+.Menu{
+  display: flex;
+  align-items: center;
+  
+}
+
+.opts{
+  padding: 1em;
+}
+
+.Logo p{
+  margin-left: 3em;
+}
+
+.Inicio{
+  margin-left: 3em;
+}
+
+.Meio {
+  margin-left: 3em;
+  margin-right: 43em;
+  text-align: justify;
+}
+
+.btn{
+  background-color: transparent;
+  border: 4px solid rgb(167, 15, 41);
+  border-radius: 30px;
+  width: 20em;
+  padding: 1em;
+  margin-bottom: 10em;
+  transition: .1s;
+}
+
+.btn:hover{
+  background-color: rgba(148, 148, 207, 0.555);
+  border: 4px solid rgb(112, 221, 117);
+  color: white;
+  border-radius: 30px;
+  width: 20em;
+  padding: 1em;
+  margin-bottom: 10em;
+}
+
+h1{
+  font-size: 5em;
+}
+
+.busca {
+  padding: 0.8em;
+  border-radius: 30px;
+  margin-right: 3em;
+  border: none;
+}
+
+ul{
+  display: flex;
+}
+
+span{
+  display: flex;
+  font-size: 10em;
 }
