@@ -1,21 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
 
-const displayEmojiName = event => alert(event.target.id);
-const emojis = [
-  {
-    emoji: '😀',
-    name: "test grinning face"
-  },
-  {
-    emoji: '🎉',
-    name: "party popper"
-  },
-  {
-    emoji: '💃',
-    name: "woman dancing"
-  }
-];
 
 function App() {
   return (
