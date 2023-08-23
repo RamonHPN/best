@@ -24,7 +24,7 @@ function verificarResposta(perguntaIndex, opcaoEscolhida) {
     }
 };
 
-verificarResposta(questions[0], questions.options[2]);
+verificarResposta(0, 2);
 
 console.log(score);
 
