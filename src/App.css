@@ -1,5 +1,7 @@
 *{
   color: rgb(255, 255, 255);
+  margin: 0;
+  box-sizing: border-box;
 }
 
 
@@ -43,26 +45,20 @@
   }
 }
 
-* {
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body{
-  background: url("https://c4.wallpaperflare.com/wallpaper/283/667/688/question-marks-figures-backgrounds-3d-download-3840x2400-question-marks-wallpaper-preview.jpg");
+  background: url("https://images.alphacoders.com/442/442499.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
 
 header {
-  background-color: #282c345b;
+  background-color: #6d8d767e;
   color: #1f1d1d;
-  padding: 2px;
+  padding: 1em;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center; 
-  padding: 1em 0em;
   
 }
 
@@ -73,8 +69,140 @@ header a{
 
 header h2 {
   color: aliceblue;
-  font-size: 3em;
+  font-size: 1.5em;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.geral{
+  /*background-color: red;*/
+  width: 100%;
+  height: 89vh;
+  display: flex;
+}
+
+.parte1{
+  /*background-color: blue;*/
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  display: grid;
+  align-content: space-around;
+  justify-items: center;
+}
+
+.parte2{
+  /*background-color: green;*/
+  width: 50%;
+  height: 100%;
+  display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.divPontos{
+  background-color: rgba(233, 233, 225, 0);
+  border: 2px dashed red;
+  padding: 1em;
+  height: 8em;
+  width: max-content;
+}
+
+.divPontos h2{
+  font-size: 3em;
+  margin: 0;
+}
+
+.opts{
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7em;
+}
+
+.btnOpt{
+  width: 20em;
+  margin-top: 2em;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 2px solid rgb(255, 255, 255);
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  z-index:2;
+  color: rgb(255, 255, 255);
+}
+
+.btnOpt:after {
+  content: "";
+  background-color: #24a08f88;
+  width: 100%;
+  z-index: -2;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.btnOpt:hover:after {
+  top: 0px;
+  left: 0px;
+  background-color: rgba(98, 212, 197, 0.726);
+}
+.btnOpt p{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; 
+}
+
+.btnProxPergunta{
+  width: 20em;
+  margin-top: 2em;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 2px solid rgb(255, 255, 255);
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  z-index:2;
+  color: rgb(255, 255, 255);
+}
+
+.btnProxPergunta:after {
+  content: "";
+  background-color: #05202988;
+  width: 100%;
+  z-index: -2;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.btnProxPergunta:hover:after {
+  top: 0px;
+  left: 0px;
+  background-color: rgba(86, 83, 250, 0.726);
+}
+.btnProxPergunta p{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; 
 }
 
 .Menu{
@@ -154,4 +282,44 @@ ul{
 span{
   display: flex;
   font-size: 10em;
+}
+
+
+@media only screen and (max-width: 910px) {
+  .geral{
+    display: block;
+  }
+
+  .parte1, .parte2{
+    width: 100%;
+    height: 50%;
+  }
+
+  .pergunta{
+    font-size: 2em;
+  }
+
+  .opts{
+    margin-top: 0;
+  }
+
+}
+
+@media only screen and (max-width: 513px) {
+  .pergunta{
+    font-size: clamp(10px, 1.9em, 10em);
+  }
+
+  .divPontos{
+    margin: 0;
+    padding: 1em 1em;
+  }
+
+  .btnOpt{
+    width: 10em;
+  }
+
+  .btnProxPergunta{
+    width: clamp(1em, 12em, 20em);
+  }
 }

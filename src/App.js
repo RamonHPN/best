@@ -4,22 +4,6 @@ import './App.css';
 
 function App() {
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a><h1>T</h1>
-    //   </header>
-      
     // </div>
     <div>
       <header>
@@ -40,48 +24,39 @@ function App() {
       </header> 
     
     <main>
-      <div class='Inicio'>
-        <h1>
-          Pergunta N1º
-        </h1>
-        <p>
-          Pontuação Total: 0
-        </p>
-      </div>
-      <div class='Meio'> 
-        <p>
-          Pergunta:<br></br><br></br>
-          Teste Pergunta
-        </p>
-        <div class="respostas">
-          <button class="btn">
-            Learn more
-          </button>
-          <button class="btn">
-            Learn more
-          </button>
-          <button class="btn">
-            Learn more
-          </button>
-          <button class="btn">
-            Learn more
-          </button>
+      
+      <div class="geral">
+
+        <div class="parte1">
+
+          <div class="divPergunta">
+            <h1 class="pergunta">Pergunta 1</h1>
+
+          </div>
+
+          <div class="divPontos">
+            <h3 class="pontos">Pontos:</h3>
+            <h2>0</h2>
+          </div>
+
         </div>
+
+        <div class="parte2">
+          <div class="opts">
+            <button class="btnOpt"><p>Opção 1</p></button>
+            <button class="btnOpt"><p>Opção 2</p></button>
+            <button class="btnOpt"><p>Opção 3</p></button>
+            <button class="btnOpt"><p>Opção 4</p></button>
+          </div>
           
+          <div class="divProxPergunta">
+            <button class="btnProxPergunta"><p>Próxima Pergunta</p></button>
+          </div>
+
+
+        </div>
+
       </div>
-      {/* <ul>
-        {
-          emojis.map(emoji => (
-            <li key={emoji.name}>
-              <button
-                onClick={displayEmojiName}
-              >
-                <span role="img" aria-label={emoji.name} id={emoji.name}>{emoji.emoji}</span>
-              </button>
-            </li>
-          ))
-        }
-      </ul> */}
 
     </main>
 
