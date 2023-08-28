@@ -16,16 +16,6 @@ const questions = [
     }
 ];
 
-var score = 0;
-
-function verificarResposta(perguntaIndex, opcaoEscolhida) {
-    if (opcaoEscolhida === questions[perguntaIndex].answer) {
-        score++;
-    }
-};
-
-verificarResposta(0, 2);
-
-console.log(score);
+export default questions;
 
 
