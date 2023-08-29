@@ -48,11 +48,6 @@ function App() {
             <button class="btnOpt"><p>Opção 3</p></button>
             <button class="btnOpt"><p>Opção 4</p></button>
           </div>
-          
-          <div class="divProxPergunta">
-            <button class="btnProxPergunta"><p>Próxima Pergunta</p></button>
-          </div>
-
 
         </div>
 
