@@ -77,6 +77,82 @@
 
 // export default App;
 
+// import React, { useState } from 'react';
+// import questions from './Perguntas';
+// import verificarResposta from './Score';
+// import './App.css';
+
+// function App() {
+//   const [perguntaAtual, setPerguntaAtual] = useState(0);
+//   const [pontos, setPontos] = useState(0);
+//   const [fimDeJogo, setFimDeJogo] = useState(false);
+
+//   const handleRespostaClick = (opcaoEscolhida) => {
+//     if (!fimDeJogo) {
+//       const novaPontuacao = verificarResposta(perguntaAtual, opcaoEscolhida);
+//       setPontos(novaPontuacao);
+
+//       if (perguntaAtual < questions.length - 1) {
+//         setPerguntaAtual(perguntaAtual + 1);
+//       } else {
+//         setFimDeJogo(true);
+//       }
+//     }
+//   };
+
+//   return (
+//     <div>
+//       <header>
+//         <div class='Logo'>
+//           <h2>
+//             Quiz Total
+//           </h2>
+//         </div>
+//       </header> 
+    
+//       <main>
+//         <div class="geral">
+//           <div class="parte1">
+//             {fimDeJogo ? (
+//               <div>
+//                 <h1>Fim de Jogo</h1>
+//                 <h2>Pontuação Total: {pontos}</h2>
+//               </div>
+//             ) : (
+//               <div>
+//                 <div class="divPergunta">
+//                   <h1 class="pergunta">{questions[perguntaAtual].question}</h1>
+//                 </div>
+//                 <div class="divPontos">
+//                   <h3 class="pontos">Pontos:</h3>
+//                   <h2>{pontos}</h2>
+//                 </div>
+//               </div>
+//             )}
+//           </div>
+//           <div class="parte2">
+//             <div class="opts">
+//               {fimDeJogo
+//                 ? null
+//                 : questions[perguntaAtual].options.map((opcao, index) => (
+//                     <button
+//                       key={index}
+//                       class="btnOpt"
+//                       onClick={() => handleRespostaClick(index)}
+//                     >
+//                       <p>{opcao}</p>
+//                     </button>
+//                   ))}
+//             </div>
+//           </div>
+//         </div>
+//       </main>
+//     </div>
+//   );
+// }
+
+// export default App;
+
 import React, { useState } from 'react';
 import questions from './Perguntas';
 import verificarResposta from './Score';
@@ -100,6 +176,12 @@ function App() {
     }
   };
 
+  const reiniciarJogo = () => {
+    setPerguntaAtual(0);
+    setPontos(0);
+    setFimDeJogo(false);
+  };
+
   return (
     <div>
       <header>
@@ -117,6 +199,7 @@ function App() {
               <div>
                 <h1>Fim de Jogo</h1>
                 <h2>Pontuação Total: {pontos}</h2>
+                <button class="btnOpt" onClick={reiniciarJogo}>Tentar de Novo</button>
               </div>
             ) : (
               <div>
@@ -152,4 +235,5 @@ function App() {
 }
 
 export default App;
+
 
