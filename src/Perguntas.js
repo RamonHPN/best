@@ -11,7 +11,17 @@ const questions = [
     },
     {
         question: "Eu compro um quilo de carne, se eu cozinho é meu?",
-        options: ["Sim", "Provalmente", "Jesus!", "Coom certeza!"],
+        options: ["Sim", "Provalmente", "não", "Coom certeza!"],
+        answer: 3
+    },
+    {
+        question: "Qual a profissão dos sete anões?",
+        options: ["Nenhuma", "Divertir as massas", "Mineiros", "Coveiros"],
+        answer: 1
+    },
+    {
+        question: "O Ramon é:",
+        options: ["O melhor", "O mais legal", "O mais incrível", "Todas as anteriores"],
         answer: 3
     }
 ];
