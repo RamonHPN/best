@@ -1,7 +1,7 @@
 import questions from './Perguntas.js';
 
 
-let score = 0; // Inicializa a pontuação fora da função
+var score = 0; // Inicializa a pontuação fora da função
 
 function verificarResposta(perguntaIndex, opcaoEscolhida) {
     if (opcaoEscolhida === questions[perguntaIndex].answer) {
@@ -9,8 +9,9 @@ function verificarResposta(perguntaIndex, opcaoEscolhida) {
     } else {
         score = score - 1;
     }
-    console.log(score);
+    //console.log(score);
     return score;
 }
 
 export default verificarResposta;
+
